@@ -1,0 +1,16 @@
+       print ("smtp inside")               		 
+            body = email_body.split('\n')
+            email_body = ''
+            email_body = self.refactor_body(body)
+            msg = MIMEMultipart()
+            to = email_to
+            email_to = email_to.split(",")
+            reply_to = aeci.get("reply-to") if aeci.get("reply-to") else username
+            validation_check = self.validate_inputs(body=email_body, subject=email_subject, email_to=email_to, email_cc=cc_recipients, email_bcc=bcc_recipients, reply_to=reply_to)
+            if validation_check:
+                return "Failed "+str(validation_check)
+            send_to = ""
+            cc = ""
+            bcc = ""
+            if cc_recipients:
+                email_to += cc_recipients
