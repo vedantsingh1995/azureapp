@@ -1,1 +1,3 @@
-print ("inside python code")
+h = {}
+h["subs_id"] = "2141"
+print (h)
