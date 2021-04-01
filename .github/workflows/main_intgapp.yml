@@ -32,4 +32,4 @@ jobs:
       with:
         app-name: 'intgapp'
         slot-name: 'production'
-        publish-profile: ${{ secrets.AzureAppService_PublishProfile_8592cd878b4d45f48833fe6074ed9fbc }}
+        publish-profile: ${{ secrets.AzureAppService_PublishProfile_70c165ded1694d858b5172a45162af53 }}
