@@ -1,4 +1,5 @@
 from flask import Flask
+import os
 #from flask import Response
 app = Flask(__name__)
 
@@ -9,6 +10,6 @@ def hello():
     #d["subscription_id"] = subs_id
     #print (d)
     #resp = Flask.Response("Foo bar baz")
-    print  (ConfigurationManager.AppSettings["test"])
+    print (os.environ["test"])
     #resp.headers['Ocp-Apim-Subscription-Key'] = ''   
     return "test"
