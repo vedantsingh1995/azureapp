@@ -11,8 +11,8 @@ def hello():
     #d["subscription_id"] = subs_id
     #print (d)
     #resp = Flask.Response("Foo bar baz")
-    print (os.environ["test"])
-    return Response(headers={'Access-Control-Allow-Origin':'*'})
+    head = (os.environ["test"])
+    return Response(headers={'Ocp-Apim-Subscription-Key': head})
     #resp.headers['Ocp-Apim-Subscription-Key'] = 'sjhdsdjs'
     #return resp
     #return "test"
