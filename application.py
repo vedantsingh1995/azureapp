@@ -7,7 +7,7 @@ def hello():
     #subs_id = "xxxx"
     #d["subscription_id"] = subs_id
     #print (d)
-    resp = flask.Response("Foo bar baz")
+    resp = Flask.Response("Foo bar baz")
     print  (ConfigurationManager.AppSettings["test"])
     #resp.headers['Ocp-Apim-Subscription-Key'] = ''   
     return resp
