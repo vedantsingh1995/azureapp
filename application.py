@@ -8,5 +8,6 @@ def hello():
     #d["subscription_id"] = subs_id
     #print (d)
     resp = flask.Response("Foo bar baz")
-    resp.headers['Ocp-Apim-Subscription-Key'] = ''   
+    print  (ConfigurationManager.AppSettings["test"])
+    #resp.headers['Ocp-Apim-Subscription-Key'] = ''   
     return resp
