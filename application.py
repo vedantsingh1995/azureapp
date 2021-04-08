@@ -11,4 +11,4 @@ def hello():
     #resp = Flask.Response("Foo bar baz")
     print  (ConfigurationManager.AppSettings["test"])
     #resp.headers['Ocp-Apim-Subscription-Key'] = ''   
-    return <h1>test</h1>
+    return "test"
