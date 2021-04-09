@@ -3,7 +3,7 @@ import os
 from flask import Response
 app = Flask(__name__)
 
-@app.route("/")
+@app.route("/",methods = ['POST', 'GET'])
 #@app.after_request
 def hello():
     #d = {}
